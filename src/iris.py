@@ -20,6 +20,8 @@ iris = load_iris()
 X = pd.DataFrame(iris.data, columns=iris.feature_names)
 y = pd.Series(iris.target, name="species")
 
+df = pd.DataFrame(iris.data, columns=iris.feature_names)
+df["target"] = iris.target
 
 
 
@@ -64,7 +66,7 @@ with mlflow.start_run():
     mlflow.log_param('max_depth',5)
     mlflow.sklearn.log_model(model,'Decision Tree')
     mlflow.log_artifact("src/iris.py")
-    mlflow.log_input(iris)
+    mlflow.log_input(df)
 
 
     
