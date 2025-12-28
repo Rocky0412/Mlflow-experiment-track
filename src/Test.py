@@ -7,5 +7,13 @@ dagshub.init(
     mlflow=True
 )
 
-client = mlflow.tracking.MlflowClient()
-print(client.list_artifacts("fda0f4793696420f92962ffacc09b6b5"))
+
+
+from mlflow.tracking import MlflowClient
+
+client = MlflowClient()
+
+run_id = "e40bbcf3c7184e21b51ad3c144d8954d"
+
+for item in client.list_artifacts(run_id):
+    print(item.path)
