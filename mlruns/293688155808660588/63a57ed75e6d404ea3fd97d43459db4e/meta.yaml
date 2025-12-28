@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/rocky/Desktop/mlops_projects/mlflow/mlruns/293688155808660588/63a57ed75e6d404ea3fd97d43459db4e/artifacts
+end_time: 1766900377966
+entry_point_name: ''
+experiment_id: '293688155808660588'
+lifecycle_stage: active
+run_id: 63a57ed75e6d404ea3fd97d43459db4e
+run_name: zealous-crow-175
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766900376701
+status: 3
+tags: []
+user_id: rocky
