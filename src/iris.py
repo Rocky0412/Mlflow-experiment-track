@@ -25,6 +25,8 @@ df = pd.DataFrame(iris.data, columns=iris.feature_names)
 df["target"] = iris.target
 dataset = PandasDataset(df, name="iris_dataset")
 
+df.to_csv("iris.csv", index=False)
+
 
 # 3. Train-Test Split
 X_train, X_test, y_train, y_test = train_test_split(
@@ -67,7 +69,7 @@ with mlflow.start_run():
     mlflow.log_param('max_depth',5)
     mlflow.sklearn.log_model(model,'Decision Tree')
     mlflow.log_artifact("src/iris.py")
-    mlflow.log_input(dataset,context='Training data')
+    mlflow.log_artifact('iris.csv',artifact_path="dataset")
 
 
     
