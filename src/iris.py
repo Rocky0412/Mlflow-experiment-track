@@ -4,6 +4,7 @@
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score, classification_report
 import pandas as pd
 import joblib
@@ -35,7 +36,7 @@ mlflow.set_experiment("Iris-Experiment")
 
 with mlflow.start_run():
     
-    model = RandomForestClassifier(max_depth=5)
+    model = DecisionTreeClassifier(criterion='gini',max_depth=5)
     model.fit(X_train, y_train)
 
 
