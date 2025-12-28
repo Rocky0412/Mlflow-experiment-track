@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rocky/Desktop/mlops_projects/mlflow/mlruns/293688155808660588/4aa087e97ce743d581dfef01b52c2aee/artifacts
+deleted_time: 1766928713784
+end_time: 1766899878720
+entry_point_name: ''
+experiment_id: '293688155808660588'
+lifecycle_stage: deleted
+run_id: 4aa087e97ce743d581dfef01b52c2aee
+run_name: hilarious-wolf-922
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766899877448
+status: 3
+tags: []
+user_id: rocky

@@ -1,9 +1,3 @@
-
-# Iris Dataset MLflow + Dagshub End-to-End
-
-# ------------------------------
-# 1. Import Libraries
-# ------------------------------
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
@@ -14,37 +8,24 @@ import dagshub
 from mlflow.tracking import MlflowClient
 import os
 
-# ------------------------------
-# 2. Initialize Dagshub MLflow Integration
-# ------------------------------
-dagshub.init(
-    repo_owner='Rocky0412',
-    repo_name='Mlflow-experiment-track',
-    mlflow=True
+# Load data
+iris = load_iris()
+X_train, X_test, y_train, y_test = train_test_split(
+    iris.data, iris.target, test_size=0.2, random_state=42
 )
 
-# Explicitly set the tracking URI to Dagshub
-mlflow.set_tracking_uri("https://dagshub.com/Rocky0412/Mlflow-experiment-track.mlflow")
+# Train model
+model = DecisionTreeClassifier()
+model.fit(X_train, y_train)
 
-# ------------------------------
-# 3. Create / Choose Experiment
-# ------------------------------
-EXPERIMENT_NAME = "Iris-Experiment_2"
-client = MlflowClient()
+mlflow.set_tracking_uri(uri='http://127.0.0.1:5000')
 
-# Check if experiment exists
-exp = client.get_experiment_by_name(EXPERIMENT_NAME)
-if exp is None:
-    mlflow.create_experiment(EXPERIMENT_NAME)
-    exp = client.get_experiment_by_name(EXPERIMENT_NAME)
-elif exp.lifecycle_stage == "deleted":
-    client.restore_experiment(exp.experiment_id)
+experiment_name = "Iris_Experiment"
+mlflow.set_experiment(experiment_name)
 
-mlflow.set_experiment(EXPERIMENT_NAME)
 
-# ------------------------------
-# 4. Start MLflow Run
-# ------------------------------
+
+# Start MLflow run
 with mlflow.start_run() as run:
     run_id = run.info.run_id
     print(f"Run ID: {run_id}")
@@ -110,7 +91,7 @@ with mlflow.start_run() as run:
     # --------------------------
     mlflow.sklearn.log_model(
         sk_model=model,
-        name="DT_model"
+        name="Iris_DT"
     )
 
     # --------------------------
@@ -124,18 +105,14 @@ with mlflow.start_run() as run:
     # --------------------------
     # Verify Artifacts
     # --------------------------
-    artifacts = client.list_artifacts(run_id)
-    print("Artifacts in this run:", [a.path for a in artifacts])
+    
 
-# ------------------------------
-# 5. Register Model
-# ------------------------------
-model_uri = f"runs:/{run_id}/DT_model"
-registered_model_name = "DT_Iris"
+
+#---- Model Register ------------------------
+model_uri = f"runs:/{run_id}/Iris_DT"
+registered_model_name = "Iris_DT"
 
 result = mlflow.register_model(
     model_uri=model_uri,
     name=registered_model_name
 )
-
-print(f"Model registered successfully: {registered_model_name}")

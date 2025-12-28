@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/rocky/Desktop/mlops_projects/mlflow/mlruns/701263392714738255/9a0fdc7ce8564fe392c79e9b533b1c5a/artifacts
+end_time: 1766927851472
+entry_point_name: ''
+experiment_id: '701263392714738255'
+lifecycle_stage: active
+run_id: 9a0fdc7ce8564fe392c79e9b533b1c5a
+run_name: casual-panda-324
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766927850215
+status: 3
+tags: []
+user_id: rocky

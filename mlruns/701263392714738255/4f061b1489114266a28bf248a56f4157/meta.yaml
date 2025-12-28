@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/rocky/Desktop/mlops_projects/mlflow/mlruns/701263392714738255/4f061b1489114266a28bf248a56f4157/artifacts
+end_time: 1766928691546
+entry_point_name: ''
+experiment_id: '701263392714738255'
+lifecycle_stage: active
+run_id: 4f061b1489114266a28bf248a56f4157
+run_name: melodic-wolf-791
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766928690243
+status: 3
+tags: []
+user_id: rocky

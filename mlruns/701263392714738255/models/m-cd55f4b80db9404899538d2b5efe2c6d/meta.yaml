@@ -1,0 +1,10 @@
+artifact_location: file:///Users/rocky/Desktop/mlops_projects/mlflow/mlruns/701263392714738255/models/m-cd55f4b80db9404899538d2b5efe2c6d/artifacts
+creation_timestamp: 1766928690268
+experiment_id: '701263392714738255'
+last_updated_timestamp: 1766928691541
+model_id: m-cd55f4b80db9404899538d2b5efe2c6d
+model_type: ''
+name: Iris_DT
+source_run_id: 4f061b1489114266a28bf248a56f4157
+status: 2
+status_message: null

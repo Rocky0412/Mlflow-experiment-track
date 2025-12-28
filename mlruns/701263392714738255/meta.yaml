@@ -1,0 +1,6 @@
+artifact_location: file:///Users/rocky/Desktop/mlops_projects/mlflow/mlruns/701263392714738255
+creation_time: 1766927741982
+experiment_id: '701263392714738255'
+last_update_time: 1766927741982
+lifecycle_stage: active
+name: Iris_Experiment

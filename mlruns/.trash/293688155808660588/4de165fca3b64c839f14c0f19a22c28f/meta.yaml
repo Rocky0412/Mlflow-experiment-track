@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rocky/Desktop/mlops_projects/mlflow/mlruns/293688155808660588/4de165fca3b64c839f14c0f19a22c28f/artifacts
+deleted_time: 1766928713784
+end_time: 1766899842962
+entry_point_name: ''
+experiment_id: '293688155808660588'
+lifecycle_stage: deleted
+run_id: 4de165fca3b64c839f14c0f19a22c28f
+run_name: valuable-ram-50
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766899841689
+status: 4
+tags: []
+user_id: rocky

@@ -1,0 +1,15 @@
+creation_timestamp: 1766928691571
+current_stage: None
+deployment_job_state: null
+description: ''
+last_updated_timestamp: 1766928691571
+model_id: m-cd55f4b80db9404899538d2b5efe2c6d
+name: Iris_DT
+run_id: 4f061b1489114266a28bf248a56f4157
+run_link: ''
+source: models:/m-cd55f4b80db9404899538d2b5efe2c6d
+status: READY
+status_message: null
+storage_location: file:///Users/rocky/Desktop/mlops_projects/mlflow/mlruns/701263392714738255/models/m-cd55f4b80db9404899538d2b5efe2c6d/artifacts
+user_id: null
+version: 2

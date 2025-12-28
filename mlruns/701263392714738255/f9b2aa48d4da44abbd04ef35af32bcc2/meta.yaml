@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/rocky/Desktop/mlops_projects/mlflow/mlruns/701263392714738255/f9b2aa48d4da44abbd04ef35af32bcc2/artifacts
+end_time: 1766928413599
+entry_point_name: ''
+experiment_id: '701263392714738255'
+lifecycle_stage: active
+run_id: f9b2aa48d4da44abbd04ef35af32bcc2
+run_name: unequaled-elk-579
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766928412355
+status: 3
+tags: []
+user_id: rocky

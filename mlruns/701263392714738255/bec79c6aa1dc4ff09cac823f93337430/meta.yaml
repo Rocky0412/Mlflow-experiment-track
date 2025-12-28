@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/rocky/Desktop/mlops_projects/mlflow/mlruns/701263392714738255/bec79c6aa1dc4ff09cac823f93337430/artifacts
+end_time: 1766927743219
+entry_point_name: ''
+experiment_id: '701263392714738255'
+lifecycle_stage: active
+run_id: bec79c6aa1dc4ff09cac823f93337430
+run_name: victorious-shoat-131
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766927742016
+status: 3
+tags: []
+user_id: rocky

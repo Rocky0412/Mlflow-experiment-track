@@ -1,0 +1,15 @@
+creation_timestamp: 1766927989958
+current_stage: None
+deployment_job_state: null
+description: ''
+last_updated_timestamp: 1766927989958
+model_id: m-5569f1da7490424ca44a06384bee6ecf
+name: DT_Iris
+run_id: 8ff7d94a39e046bf9c02fffe76b9779c
+run_link: ''
+source: models:/m-5569f1da7490424ca44a06384bee6ecf
+status: READY
+status_message: null
+storage_location: file:///Users/rocky/Desktop/mlops_projects/mlflow/mlruns/701263392714738255/models/m-5569f1da7490424ca44a06384bee6ecf/artifacts
+user_id: null
+version: 1

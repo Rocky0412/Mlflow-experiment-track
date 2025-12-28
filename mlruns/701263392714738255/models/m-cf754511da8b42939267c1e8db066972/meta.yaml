@@ -1,0 +1,10 @@
+artifact_location: file:///Users/rocky/Desktop/mlops_projects/mlflow/mlruns/701263392714738255/models/m-cf754511da8b42939267c1e8db066972/artifacts
+creation_timestamp: 1766927742021
+experiment_id: '701263392714738255'
+last_updated_timestamp: 1766927743217
+model_id: m-cf754511da8b42939267c1e8db066972
+model_type: null
+name: DT_model
+source_run_id: bec79c6aa1dc4ff09cac823f93337430
+status: 2
+status_message: null
