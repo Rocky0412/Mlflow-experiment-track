@@ -56,9 +56,10 @@ with mlflow.start_run() as run:
 
     # Log Model
     mlflow.sklearn.log_model(
-        sk_model=model,
-        artifact_path="DecisionTreeModel"
+    sk_model=model,
+    artifact_path="model"
     )
+
 
     # Log Artifacts
     mlflow.log_artifact("iris.csv", artifact_path="dataset")
@@ -76,6 +77,7 @@ with mlflow.start_run() as run:
 # 6. Register the Model
 # ------------------------------
 print(f'run_id={run_id} ')
-model_uri = f"runs:/{run_id}/DecisionTreeModel"
+model_uri = f"runs:/{run_id}/model"
 mlflow.register_model(model_uri, "IrisDecisionTree")
+
 
