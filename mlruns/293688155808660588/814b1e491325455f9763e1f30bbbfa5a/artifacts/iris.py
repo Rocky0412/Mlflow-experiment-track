@@ -10,7 +10,6 @@ import pandas as pd
 import joblib
 import os
 import mlflow
-import dagshub
 
 
 
@@ -27,23 +26,11 @@ y = pd.Series(iris.target, name="species")
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
-
-''' #For Local Tracking Sever used by the only one user
-
-
 mlflow.set_tracking_uri("http://localhost:5000")
 # log some runs
 
 mlflow.set_tracking_uri("file:./mlruns")
 # log somewhere else
-
-'''
-
-''' Used DagHub or any cloud Solution when your are woking in a team which will help
-multiple user to track the multiple expermet'''
-
-
-dagshub.init(repo_owner='Rocky0412', repo_name='Mlflow-experiment-track', mlflow=True)
 
 mlflow.set_experiment("Iris-Experiment")
 
@@ -62,9 +49,8 @@ with mlflow.start_run():
 
     mlflow.log_metric('accuracy',accuracy_score(y_test,y_pred))
     mlflow.log_param('max_depth',5)
-    mlflow.sklearn.log_model(model,'Decision Tree')
+    mlflow.sklearn.log_model(model,'Random forest')
     mlflow.log_artifact("src/iris.py")
-    mlflow.log_input(iris)
 
 
     

@@ -1,0 +1,10 @@
+artifact_location: file:///Users/rocky/Desktop/mlops_projects/mlflow/mlruns/293688155808660588/models/m-3e7d82d7ee55451aa91db340de2cadfb/artifacts
+creation_timestamp: 1766900933980
+experiment_id: '293688155808660588'
+last_updated_timestamp: 1766900935144
+model_id: m-3e7d82d7ee55451aa91db340de2cadfb
+model_type: null
+name: Random forest
+source_run_id: 814b1e491325455f9763e1f30bbbfa5a
+status: 2
+status_message: null

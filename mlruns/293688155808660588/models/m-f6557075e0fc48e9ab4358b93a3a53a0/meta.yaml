@@ -1,0 +1,10 @@
+artifact_location: file:///Users/rocky/Desktop/mlops_projects/mlflow/mlruns/293688155808660588/models/m-f6557075e0fc48e9ab4358b93a3a53a0/artifacts
+creation_timestamp: 1766900990156
+experiment_id: '293688155808660588'
+last_updated_timestamp: 1766900991323
+model_id: m-f6557075e0fc48e9ab4358b93a3a53a0
+model_type: null
+name: Decision Tree
+source_run_id: 878cfb6af0f5420dbbdcab91672c132d
+status: 2
+status_message: null
