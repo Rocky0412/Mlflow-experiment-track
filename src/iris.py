@@ -10,6 +10,7 @@ import pandas as pd
 import joblib
 import os
 import mlflow
+from mlflow.data.pandas_dataset import PandasDataset
 import dagshub
 
 
@@ -22,7 +23,7 @@ y = pd.Series(iris.target, name="species")
 
 df = pd.DataFrame(iris.data, columns=iris.feature_names)
 df["target"] = iris.target
-
+dataset = PandasDataset(df, name="iris_dataset")
 
 
 # 3. Train-Test Split
@@ -66,7 +67,7 @@ with mlflow.start_run():
     mlflow.log_param('max_depth',5)
     mlflow.sklearn.log_model(model,'Decision Tree')
     mlflow.log_artifact("src/iris.py")
-    mlflow.log_input(df)
+    mlflow.log_input(dataset,context='Training data')
 
 
     
